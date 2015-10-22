@@ -10,6 +10,6 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
   def is_logged_in?
-    !session[:user_id].nil?
+    :session[:user_id].to_str.nil?
   end
 end
